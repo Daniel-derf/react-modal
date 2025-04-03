@@ -3,12 +3,21 @@ import "./App.css";
 import Modal from "./components/Modal";
 
 function App() {
-  const [openModal, setOpenModal] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <>
-      <Modal isOpen={openModal} />
+      <Modal isOpen={isModalOpen} closeModal={closeModal} />
       <h1>CONTENT</h1>
+      <button onClick={openModal}>OPEN MODAL</button>
     </>
   );
 }
