@@ -1,0 +1,22 @@
+.modal-container {
+  position: absolute;
+  display: flex;
+  margin: 10%;
+  padding: 2%;
+
+  /* colors */
+  background-color: wheat;
+  color: black;
+}
+
+.container-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container-content {
+}
