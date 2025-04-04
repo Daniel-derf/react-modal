@@ -3,6 +3,7 @@
   display: flex;
   margin: 10%;
   padding: 2%;
+  z-index: 20;
 
   /* colors */
   background-color: wheat;

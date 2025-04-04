@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div className="app-container">
+      {isModalOpen && <div className="overlay" onClick={closeModal}></div>}
       <Modal isOpen={isModalOpen} closeModal={closeModal} />
       <h1>CONTENT</h1>
       <button onClick={openModal} className="container-btn">
